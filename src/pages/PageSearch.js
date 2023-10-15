@@ -10,7 +10,6 @@ export default function PageSearch() {
   const searchMovies = async () => {
     const data = await fetchDataMovieSearch(namemovie);
     setMovies(data.results);
-    console.log(data, "data");
   };
 
   useEffect(() => {

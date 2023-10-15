@@ -5,7 +5,7 @@ const http = axios.create({
   timeout: 30000,
   headers: {
     Accept: "application/json",
-    Authorization: `${process.env.REACT_APP_KEY}`,
+    Authorization: `Bearer ${process.env.REACT_APP_KEY}`,
   },
 });
 export default http;

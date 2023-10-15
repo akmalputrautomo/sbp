@@ -28,7 +28,7 @@ const NowPlaying = () => {
         {movie.map((film) => (
           <SwiperSlide key={film.id}>
             <div className="w-full h-[52rem] relative">
-              <img className="w-full h-full bg-cover opacity-25 " src={`https://image.tmdb.org/t/p/original/${film.backdrop_path}`}></img>
+              <img className="w-full h-full bg-cover opacity-50 " src={`https://image.tmdb.org/t/p/original/${film.backdrop_path}`}></img>
               <div className="absolute top-0 w-[50%] h-full flex flex-col justify-center gap-4 pl-10 text-white">
                 <h1 className="text-5xl font-bold ">{film.title}</h1>
                 <p className="text-xl">{film.overview}</p>

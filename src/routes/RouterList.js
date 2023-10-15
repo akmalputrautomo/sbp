@@ -4,12 +4,18 @@ import App from "../App";
 import PageSearch from "../pages/PageSearch";
 import DetailMovie from "../pages/DetailMovie";
 import { SeAllMovie } from "../pages/SeAllMovie";
+import { Register } from "../pages/auth/Register";
+import { Loginpage } from "../pages/auth/Loginpage";
+import { Dashboard } from "../pages/auth/Dashboard";
 
 export const Routerlist = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<App />} />
+        {/* <Route path="/" element={<App />} /> */}
+        <Route path="/" element={<Register />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/loginpage" element={<Loginpage />} />
         <Route path="/:namemovie" element={<PageSearch />} />
         <Route path="/allmovie" element={<SeAllMovie />} />
         <Route path="/detail/:movieId" element={<DetailMovie />} />

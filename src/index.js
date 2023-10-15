@@ -4,6 +4,8 @@ import { Routerlist } from "./routes/RouterList";
 import "../src/assets/css/index.css";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const queryMovie = new QueryClient();
 
@@ -14,5 +16,6 @@ root.render(
       <Routerlist />
       {/* <ReactQueryDevtools initialIsOpen={false} /> */}
     </QueryClientProvider>
+    <ToastContainer />
   </React.StrictMode>
 );
