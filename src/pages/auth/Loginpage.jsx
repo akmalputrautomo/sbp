@@ -63,13 +63,13 @@ export const Loginpage = () => {
         >
           Login
         </button>
-        <button
+        {/* <button
           onClick={() => {
             navigate("/");
           }}
         >
           Apakah anda belum mempunyai akun? klik di sini
-        </button>
+        </button> */}
       </div>
     </div>
   );
