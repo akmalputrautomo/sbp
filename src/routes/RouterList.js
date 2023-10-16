@@ -12,10 +12,10 @@ export const Routerlist = () => {
   return (
     <BrowserRouter>
       <Routes>
-        {/* <Route path="/" element={<App />} /> */}
+        <Route path="/" element={<App />} />
         {/* <Route path="/" element={<Register />} /> */}
-        <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/" element={<Loginpage />} />
+        {/* <Route path="/dashboard" element={<Dashboard />} /> */}
+        {/* <Route path="/" element={<Loginpage />} /> */}
         <Route path="/:namemovie" element={<PageSearch />} />
         <Route path="/allmovie" element={<SeAllMovie />} />
         <Route path="/detail/:movieId" element={<DetailMovie />} />

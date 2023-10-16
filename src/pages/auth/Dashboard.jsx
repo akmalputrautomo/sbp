@@ -20,7 +20,7 @@ export const Dashboard = () => {
 
   return (
     <div className="flex items-center justify-center flex-col ">
-      <h1 className="text-2xl font-bold mb-4">DASHBOARD</h1>
+      <h1 className="text-2xl font-bold mb-4">DASHBOARD DERR</h1>
       <button
         className="py-2 px-4 bg-red-500 text-white rounded-md"
         onClick={() => {
