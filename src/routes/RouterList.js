@@ -16,9 +16,9 @@ export const Routerlist = () => {
         {/* <Route path="/" element={<Register />} /> */}
         {/* <Route path="/dashboard" element={<Dashboard />} /> */}
         {/* <Route path="/" element={<Loginpage />} /> */}
-        <Route path="/:namemovie" element={<PageSearch />} />
+        <Route path="/:nameadat" element={<PageSearch />} />
         <Route path="/allmovie" element={<SeAllMovie />} />
-        <Route path="/detail/:movieId" element={<DetailMovie />} />
+        <Route path="/detail/:gambarid" element={<DetailMovie />} />
       </Routes>
     </BrowserRouter>
   );

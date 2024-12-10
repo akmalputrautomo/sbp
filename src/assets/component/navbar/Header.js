@@ -9,8 +9,8 @@ const Headers = () => {
       <Brand />
       <Search />
       <div className="flex gap-2">
-        <Button variant="secondary">Login</Button>
-        <Button variant="primary">Register</Button>
+        {/* <Button variant="secondary">Login</Button>
+        <Button variant="primary">Register</Button> */}
       </div>
     </div>
   );
