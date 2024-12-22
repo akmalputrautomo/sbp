@@ -41,7 +41,7 @@ const NowPlaying = () => {
         {gambarkumpul.map((gambar) => (
           <SwiperSlide>
             <div className="w-full h-[52rem] relative">
-              <img className="w-full h-full bg-cover opacity-50 " src={gambar.foto}></img>
+              <img className="w-screen h-full bg-cover opacity-50 " src={gambar.foto}></img>
               <div className="absolute top-0 w-[50%] h-full flex flex-col justify-center gap-4 pl-10 text-white">
                 <h1 className="text-5xl font-bold ">{gambar.judul}</h1>
                 <p className="text-xl">{gambar.penjelasan}</p>
