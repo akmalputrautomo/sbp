@@ -166,22 +166,21 @@ export const SeAllMovie = () => {
   ];
 
   return (
-    <div className=" bg-black">
+    <div className="bg-black">
       <div className="px-4 text-white">
-        <h1 className="text-6xl font-semibold mb-4 text-center text-red-600">ADAT BALI</h1>
-        <div className="grid grid-cols-4 gap-4 p-4">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold mb-4 text-center text-red-600">ADAT BALI</h1>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
           {gambarkumpul.map((gambar) => (
             <div
               onClick={() => {
                 navigate(`/detail/${gambar.id}`);
               }}
               key={gambar.id}
-              className="cursor-pointer border rounded-md transition-transform transform hover:scale-105"
+              className="cursor-pointer border border-gray-700 rounded-md transition-transform transform hover:scale-105"
             >
-              <h1 className=" pl-2 pb-2 text-xl">{gambar.judul}</h1>
-              <img className="px-4 rounded-[1.5rem]" src={gambar.foto}></img>
+              <h1 className="pl-2 pb-2 text-xl">{gambar.judul}</h1>
+              <img className="px-4 rounded-[1.5rem]" src={gambar.foto} alt={gambar.judul} />
               <div className="p-4">
-                {/* <h2 className="text-lg font-semibold mb-2">Release Date : {film.release_date}</h2> */}
                 <p>{gambar.penjelasan}</p>
               </div>
             </div>

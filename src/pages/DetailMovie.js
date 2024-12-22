@@ -167,22 +167,24 @@ export default function PageSearch() {
   const selectedGambar = gambarkumpul.find((item) => item.id === parseInt(gambarid));
 
   return (
-    <div className="bg-black text-white">
+    <div className="bg-black text-white relative">
       <Headers />
       {selectedGambar ? (
         <>
-          <img className="h-screen w-full opacity-20" src={selectedGambar.foto} />
-          <div className="absolute top-0 w-[70%] h-full flex flex-col justify-center gap-2 pl-10 text-white">
-            <h1 className="text-6xl font-bold">{selectedGambar.judul}</h1>
-            <p className="text-xl pb-2">{selectedGambar.penjelasan}</p>
-            <button onClick={() => (window.location.href = selectedGambar.link)} className="bg-red-500 rounded-md w-1/4 py-2 font-bold flex justify-center gap-2">
+          {/* Background Image */}
+          <img className="h-screen w-full object-cover opacity-20" src={selectedGambar.foto} alt={selectedGambar.judul} />
+          {/* Content Overlay */}
+          <div className="absolute inset-0 flex flex-col justify-center gap-4 px-6 md:px-10 lg:px-20 text-white">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold">{selectedGambar.judul}</h1>
+            <p className="text-lg md:text-xl lg:text-2xl pb-2">{selectedGambar.penjelasan}</p>
+            <button onClick={() => (window.location.href = selectedGambar.link)} className="bg-red-500 rounded-md py-2 px-6 md:w-1/3 lg:w-1/4 font-bold flex items-center gap-2 hover:bg-red-600 transition-colors">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
               Lihat Adat
             </button>
-            <div className="">
-              <p className="py-3 text-lg">{selectedGambar.Sejarah}</p>
+            <div>
+              <p className="py-3 text-base md:text-lg">{selectedGambar.Sejarah}</p>
             </div>
           </div>
         </>
